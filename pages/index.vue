@@ -22,8 +22,11 @@
             {{ name.Lukumäärä }}
           </td>
           <td class="text-right">
-            <NuxtLink :to="{ path: 'lastname', query: { lastname: name.ID } }">
-              Avaa lista
+            <NuxtLink
+              class="btn btn-sm btn-primary"
+              :to="{ path: 'lastname', query: { lastname: name.ID } }"
+            >
+              Lista
             </NuxtLink>
           </td>
         </tr>
